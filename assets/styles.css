@@ -12,10 +12,6 @@ body {
     color: var(--text-color);
 }
 
-.container {
-    box-sizing: border-box;
-}
-
 header, footer {
     background-color: var(--pink-dark);
 }
@@ -27,6 +23,11 @@ main {
 a:any-link {
     text-decoration: none;
     color: var(--text-color);
+    transition: background-color .8s;
+}
+
+a:hover {
+    background-color: var(--pink-light);
 }
 
 header {
@@ -41,19 +42,12 @@ header {
     max-height: 80px;
 }
 
-header a:any-link {
-    transition: background-color .8s;
-}
-
-header a:hover {
-    background-color: var(--pink-light);
-}
-
 nav a {
     margin: 0 20px;
     padding: 0 10px;
     padding-bottom: 100%;
     padding-top: 5%;
+    border-radius: 10px;
 }
 
 header img {

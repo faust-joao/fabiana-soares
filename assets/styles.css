@@ -47,3 +47,15 @@ nav a {
     padding-top: 5%;
     border-radius: 10px;
 }
+
+header img {
+    width: 80px;
+}
+
+nav a {
+    padding: 5% 10px 30px 10px;
+}
+
+nav a:last-child {
+    margin-left: 20px;
+}

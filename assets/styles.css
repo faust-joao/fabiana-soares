@@ -23,11 +23,6 @@ main {
 a:any-link {
     text-decoration: none;
     color: var(--text-color);
-    transition: background-color .8s;
-}
-
-a:hover {
-    background-color: var(--pink-light);
 }
 
 header {
@@ -40,6 +35,14 @@ header {
     top: 0;
     min-height: 80px;
     max-height: 80px;
+}
+
+header a:any-link {
+    transition: background-color .8s;
+}
+
+header a:hover {
+    background-color: var(--pink-light);
 }
 
 nav a {

@@ -1,0 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+:root {
+    --pink-dark: #F2ACCD;
+    --pink-light: #F2C9DC;
+    --text-color: #000;
+    --font-family: 'Montserrat', sans-serif;
+}

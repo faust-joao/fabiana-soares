@@ -89,6 +89,17 @@ main {
     padding: 30px;
 }
 
+.loja img {
+    margin: 0 auto;
+}
+
+.loja div {
+    text-align: center;
+    align-self: center;
+    margin: 0 auto;
+    width: 60%;
+}
+
 .loja {
     display: flex;
     flex-wrap: wrap;

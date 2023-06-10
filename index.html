@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="assets/normalize.css">
     <link rel="stylesheet" href="assets/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer">
-    <meta name="description" content="">
+    <meta name="description" content="Blog com alguns trabalhos da empreendedora Fabiana Soares">
     <title>Fabiana Soares</title>
 </head>
 <body>
@@ -16,21 +16,21 @@
         <header>
             <img src="assets/imgs/logo.svg" alt="Logo Fabiana Soares">
             <nav>
-                <a href="#">Inicio</a>
-                <a href="#">Galeria</a>
+                <a href="#inicio">Inicio</a>
+                <a href="#galeria">Galeria</a>
             </nav>
         </header>
         <main>
             <!-- Inicio -->
-            <section>
+            <section id="inicio">
                 <!-- <img src="/assets/imgs/fabiana.svg" alt="Fabiana Soares"> -->
                 <h1>Design de sobrancelhas e micropigmentação</h1>
                 <p>Descubra a arte de sobrancelhas perfeitas para melhorar sua autoestima. Oferecemos design e micropigmentação personalizados para realçar sua beleza natural. Com uma especialista talentosa, garantimos resultados impecáveis e duradouros. Desfrute de um ambiente acolhedor e seguro durante sua consulta. Agende agora e confie sua moldura facial a mãos habilidosas.</p>     
             </section>
             <hr>
             <!-- Galeria -->
-            <section>
-                <div>
+            <section id="galeria">
+                <div class="loja">
                     <img src="/assets/imgs/frente.jpeg" alt="Frente da loja">
                     <img src="/assets/imgs/sala.jpeg" alt="Dentro da sala">
                 </div>
@@ -39,12 +39,18 @@
                 </p>
                 <hr>
                 <h2>Trabalhos</h2>
-                <div>
-                    <img src="/assets/imgs/t1.jpeg" alt="Sobrancelha 1">
-                    <img src="/assets/imgs/t2.jpeg" alt="Sobrancelha 2">
-                    <img src="/assets/imgs/t3.jpeg" alt="Sobrancelha 3">
-                    <img src="/assets/imgs/t4.jpeg" alt="Sobrancelha 4">
-                    <img src="/assets/imgs/t5.jpeg" alt="Sobrancelha 5">                    
+                <div class="carousel">
+                    <button id="anterior">
+                        <i class="fa-solid fa-angle-left"></i>
+                    </button>
+                    <img id="t1" src="/assets/imgs/t1.jpeg" alt="Sobrancelha 1">
+                    <img id="t2" class="d-none" src="/assets/imgs/t2.jpeg" alt="Sobrancelha 2">
+                    <img id="t3" class="d-none" src="/assets/imgs/t3.jpeg" alt="Sobrancelha 3">
+                    <img id="t4" class="d-none" src="/assets/imgs/t4.jpeg" alt="Sobrancelha 4">
+                    <img id="t5" class="d-none" src="/assets/imgs/t5.jpeg" alt="Sobrancelha 5">     
+                    <button id="proximo">
+                        <i class="fa-solid fa-angle-right"></i>
+                    </button>               
                 </div>
             </section>
         </main>
@@ -53,17 +59,17 @@
             <section>
                 <ul>
                     <li>
-                        <a href="https://www.instagram.com/fabiana_soares_pmu/">
+                        <a href="https://www.instagram.com/fabiana_soares_pmu/" target="_blank">
                             <i class="fa-brands fa-instagram"></i>
                         </a>
                     </li>
                     <li>
-                        <a href="https://www.facebook.com/fabiana.americosoares">
+                        <a href="https://www.facebook.com/fabiana.americosoares" target="_blank">
                             <i class="fa-brands fa-facebook"></i>
                         </a>
                     </li>
                     <li>
-                        <a href="mailto:email@email.com.br">
+                        <a href="mailto:fabianaamericosoares34@gmail.com" target="_blank">
                             <i class="fa-solid fa-envelope"></i>
                         </a>
                     </li>

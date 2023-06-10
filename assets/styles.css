@@ -1,12 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
 :root {
+    scroll-behavior: smooth;
     --pink-dark: #F2ACCD;
     --pink-light: #F2C9DC;
     --text-color: #000;
     --font-family: 'Montserrat', sans-serif;
 }
 
+/* geral */
 body {
     font-family: var(--font-family);
     color: var(--text-color);
@@ -37,6 +39,11 @@ a:any-link {
     color: var(--text-color);
 }
 
+.d-none {
+    display: none;
+}
+
+/* header */
 header {
     display: flex;
     justify-content: space-between;
@@ -57,6 +64,7 @@ header a:hover {
     background-color: var(--pink-light);
 }
 
+/* navbar */
 nav a {
     margin: 0 20px;
     padding: 0 10px;
@@ -76,11 +84,12 @@ nav a:last-child {
     margin-left: 20px;
 }
 
+/* main */
 main {
     padding: 30px;
 }
 
-main section:last-child div:first-child {
+.loja {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -91,6 +100,24 @@ main p {
     text-align: justify;
 }
 
+/* carouse */
+.carousel {
+    display: flex;
+    justify-content: center;
+}
+
+.carousel, h2 {
+    text-align: center;
+}
+
+.carousel button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 30px;
+}
+
+/* footer */
 footer {
     display: flex;
     flex-wrap: wrap;

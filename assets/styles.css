@@ -89,11 +89,16 @@ main {
     padding: 30px;
 }
 
-.loja img {
+#inicio {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#inicio img {
     margin: 0 auto;
 }
 
-.loja div {
+#inicio div {
     text-align: center;
     align-self: center;
     margin: 0 auto;
@@ -145,4 +150,10 @@ footer ul {
     display: flex;
     gap: 30px;
     list-style-type: none;
+}
+
+@media (max-width: 1091px) {
+    #inicio div {
+        width: 100%;
+    }
 }

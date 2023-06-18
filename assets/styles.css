@@ -41,6 +41,7 @@ a:any-link {
 
 /* header */
 header {
+    /* position: relative; */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -52,11 +53,11 @@ header {
     max-height: 80px;
 }
 
-header a:any-link {
+nav div a:any-link {
     transition: background-color .8s;
 }
 
-header a:hover {
+nav div a:hover {
     background-color: var(--pink-light);
 }
 
@@ -66,6 +67,10 @@ nav a {
     padding: 0 10px;
     padding-bottom: 100%;
     padding-top: 5%;
+}
+
+nav > a {
+    display: none;
 }
 
 header img {
@@ -158,4 +163,24 @@ footer ul {
     #inicio div {
         width: 100%;
     }
+}
+
+@media screen and (max-width: 650px) {
+    #open {
+        display: block;
+        padding: 0;
+    }
+
+    nav > div {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    nav div a {
+        display: block;
+    }
+
 }

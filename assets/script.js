@@ -1,3 +1,6 @@
+// Menu
+
+// Carrosel
 const content = document.querySelectorAll('.content > *');
 let currentIndex = 0;
 

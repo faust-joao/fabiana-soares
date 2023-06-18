@@ -41,7 +41,6 @@ a:any-link {
 
 /* header */
 header {
-    /* position: relative; */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -49,15 +48,13 @@ header {
     border: 1px solid var(--pink-dark);
     position: sticky;
     top: 0;
-    min-height: 80px;
-    max-height: 80px;
 }
 
-nav div a:any-link {
+header a:any-link {
     transition: background-color .8s;
 }
 
-nav div a:hover {
+header a:hover {
     background-color: var(--pink-light);
 }
 
@@ -67,10 +64,6 @@ nav a {
     padding: 0 10px;
     padding-bottom: 100%;
     padding-top: 5%;
-}
-
-nav > a {
-    display: none;
 }
 
 header img {
@@ -163,24 +156,23 @@ footer ul {
     #inicio div {
         width: 100%;
     }
-}
 
-@media screen and (max-width: 650px) {
-    #open {
-        display: block;
-        padding: 0;
+    header {
+        justify-content: center;
+        align-items: center;
+        min-height: auto;
     }
 
-    nav > div {
-        position: absolute;
-        bottom: 0;
-        left: 0;
+    header img {
+        display: none;
+    }
+
+    nav {
+        display: flex;
         flex-direction: column;
-        width: 100%;
     }
 
-    nav div a {
-        display: block;
+    nav a {
+        padding: 20px;
     }
-
 }

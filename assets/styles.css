@@ -39,10 +39,6 @@ a:any-link {
     color: var(--text-color);
 }
 
-.d-none {
-    display: none;
-}
-
 /* header */
 header {
     display: flex;
@@ -120,7 +116,12 @@ main p {
 .carousel {
     display: flex;
     justify-content: center;
+    align-items: center;
 }
+
+.content img:not(:first-child) {
+    display: none;
+}  
 
 .carousel, h2 {
     text-align: center;
@@ -129,6 +130,7 @@ main p {
 .carousel button {
     background: transparent;
     border: none;
+    outline: none;
     cursor: pointer;
     font-size: 30px;
 }
@@ -152,7 +154,7 @@ footer ul {
     list-style-type: none;
 }
 
-@media (max-width: 1091px) {
+@media screen and (max-width: 1091px) {
     #inicio div {
         width: 100%;
     }

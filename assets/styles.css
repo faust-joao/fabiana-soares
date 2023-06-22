@@ -158,6 +158,7 @@ footer ul {
     }
 
     header {
+        position: static;
         justify-content: center;
         align-items: center;
         min-height: auto;
